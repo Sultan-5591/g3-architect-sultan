@@ -6,6 +6,9 @@
 font-family: "Work Sans", sans-serif;
 font-family: "Inter", serif;
 }
+.text-light-gray{
+    color: #727272;
+}
 .btn-primary{
     border-radius: 8px;
     color: #FFF;
@@ -56,9 +59,6 @@ nav li a{
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color: #727272;
-}
 .banner img{
     width: 100%;
     margin-top: 20px;
@@ -66,7 +66,7 @@ nav li a{
 /* main styles */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 /* team styles */
 .teams-container{
@@ -86,7 +86,6 @@ main{
     font-size: 2.6rem;
 }
 .teams-title .quick-list{
-    color: #727272;
     font-weight: 500;
 }
 .teams-title .text-features{
@@ -100,13 +99,22 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
     .btn-primary{
         cursor: pointer;
         border: 0;
     }
+    .team-img-container{
+        grid-template-columns: 1fr;
+        /* width: 10%; */
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     
 }
 /* Medium device */
@@ -114,7 +122,7 @@ main{
     header{
         padding: 50px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }   
 }
